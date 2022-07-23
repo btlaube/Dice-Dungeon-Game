@@ -29,10 +29,13 @@ public class DungeonGenerator : MonoBehaviour
     void GenerateDungeon() {
         for (int i = 0; i < size.x; i++) {
             for (int j = 0; j < size.y; j++) {
-                RoomBehaviour newRoom = Instantiate(room, new Vector2(i*offset.x, -j*offset.y), Quaternion.identity, transform).GetComponent<RoomBehaviour>();
-                newRoom.UpdateRoom(board[Mathf.FloorToInt(i+j*size.x)].status);
+                Cell currentCell = board[Mathf.FloorToInt(i + j * size.x)];
+                if (currentCell.visited) {
+                    RoomBehaviour newRoom = Instantiate(room, new Vector2(i*offset.x, -j*offset.y), Quaternion.identity, transform).GetComponent<RoomBehaviour>();
+                    newRoom.UpdateRoom(currentCell.status);
 
-                newRoom.name += " " + i + "-" + j;
+                    newRoom.name += " " + i + "-" + j;
+                }
             }
         }
     }
@@ -56,6 +59,10 @@ public class DungeonGenerator : MonoBehaviour
             k++;
 
             board[currentCell].visited = true;
+
+            if(currentCell == board.Count -1) {
+                break;
+            }
 
             //check the cells neighbors
             List<int> neighbors = CheckNeighbors(currentCell);

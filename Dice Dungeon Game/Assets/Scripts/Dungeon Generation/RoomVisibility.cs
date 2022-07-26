@@ -7,7 +7,12 @@ public class RoomVisibility : MonoBehaviour
     public Transform player;
     public List<Transform> rooms = new List<Transform>();
 
+    private Camera mainCamera;
     private int currentRoom;
+
+    void Awake() {
+        mainCamera = Camera.main;
+    }
 
     void Update() {
         UpdateRooms();
@@ -30,6 +35,7 @@ public class RoomVisibility : MonoBehaviour
         }
 
         transform.GetChild(currentRoom).gameObject.SetActive(true);
+        mainCamera.transform.position = new Vector3(transform.GetChild(currentRoom).position.x, transform.GetChild(currentRoom).position.y, mainCamera.transform.position.z);
     }
 
     public void GetRooms() {

@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 11790
+  controlID: 1769
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 11791
+  controlID: 1770
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 11792
+  controlID: 1771
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,9 +225,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f8860000
-      m_LastClickedID: 34552
-      m_ExpandedIDs: 804cffff224dffff90b4ffff86beffffc4befffff2bfffff2cfbffff845f0000b4860000
+      m_SelectedIDs: be5f0000
+      m_LastClickedID: 24510
+      m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: -0.15312499, z: 0}
     speed: 2
-    m_Value: {x: 0.00001531381, y: -0.15307389, z: -0.00000066483307}
+    m_Value: {x: 0, y: -0.15312499, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 0.73304397
     speed: 2
-    m_Value: 0.73306996
+    m_Value: 0.73304397
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -770,7 +770,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -779,15 +779,15 @@ MonoBehaviour:
     y: 494
     width: 1362
     height: 325.3333
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -829,13 +829,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Scripts/Dungeon Generation
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Scripts/Dungeon Generation
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\bentl\Unity Projects\Personal\Dice-Dungeon-Game\Dice
     Dungeon Game
@@ -843,9 +843,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 42670000
-    m_LastClickedID: 26434
-    m_ExpandedIDs: 0000000058600000
+    m_SelectedIDs: 6e620000
+    m_LastClickedID: 25198
+    m_ExpandedIDs: 00000000b4600000ea730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -873,7 +873,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000058600000
+    m_ExpandedIDs: 00000000b4600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -898,8 +898,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f8860000
-    m_LastClickedInstanceID: 34552
+    m_SelectedInstanceIDs: be5f0000
+    m_LastClickedInstanceID: 24510
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300003a600000
     m_RenameOverlay:
@@ -987,7 +987,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 34552
+  m_LastSelectedObjectID: 24510
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52

@@ -68,6 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8571512660253593429}
   - component: {fileID: 1507463872999959347}
+  - component: {fileID: 7191306959031535506}
   m_Layer: 0
   m_Name: Top_Door
   m_TagString: Untagged
@@ -142,6 +143,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &7191306959031535506
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745502895623518265}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.375, y: 1.5}
+    newSize: {x: 1.375, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.375, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &2466024764524701530
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +278,7 @@ MonoBehaviour:
   - {fileID: 4620510990794345219}
   - {fileID: 6830104420210498608}
   - {fileID: 7275063788684641396}
-  testStatus: 00000000
+  enemy: {fileID: 1415830002147202103, guid: 96a123b5fb1e87a4ea6f9f254dde9f29, type: 3}
 --- !u!1 &2508360461977542636
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,6 +560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3179819729441432983}
   - component: {fileID: 8490731645627380504}
+  - component: {fileID: 5736239787666890834}
   m_Layer: 0
   m_Name: Right_Door
   m_TagString: Untagged
@@ -607,6 +635,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &5736239787666890834
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4620510990794345219}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5, y: 1.375}
+    newSize: {x: 1.5, y: 1.375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.375}
+  m_EdgeRadius: 0
 --- !u!1 &6458373906912230591
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1519265851381656414}
   - component: {fileID: 1990303436714814577}
+  - component: {fileID: 1574001633307373458}
   m_Layer: 0
   m_Name: Bottom_Door
   m_TagString: Untagged
@@ -749,6 +804,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1574001633307373458
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6830104420210498608}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.375, y: 1.5}
+    newSize: {x: 1.375, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.375, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &7275063788684641396
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 505621466919098705}
   - component: {fileID: 4871475939624661293}
+  - component: {fileID: 2364047718722180648}
   m_Layer: 0
   m_Name: Left_Door
   m_TagString: Untagged
@@ -833,6 +915,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2364047718722180648
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7275063788684641396}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5, y: 1.375}
+    newSize: {x: 1.5, y: 1.375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.375}
+  m_EdgeRadius: 0
 --- !u!1 &7530403507799666722
 GameObject:
   m_ObjectHideFlags: 0

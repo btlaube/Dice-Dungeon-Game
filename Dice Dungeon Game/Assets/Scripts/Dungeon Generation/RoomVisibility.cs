@@ -9,22 +9,22 @@ public class RoomVisibility : MonoBehaviour
 
     private Camera mainCamera;
     private int currentRoom;
+    [SerializeField] private AudioManager audioManager;
 
     void Awake() {
         mainCamera = Camera.main;
     }
 
-    void Update() {
-        UpdateRooms();
+    void Start() {
+        audioManager = AudioManager.instance;
+
+        UpdateRooms(0);
     }
 
-    void UpdateRooms() {
+    void Update() {
         float distance;
         float minDistance = Mathf.Infinity;
-
-        foreach(Transform room in transform) {
-            room.gameObject.SetActive(false);
-        }
+        int previousRoom = currentRoom;
 
         for (int i = 0; i < rooms.Count; i++) {
             distance = Vector2.Distance(rooms[i].position, player.position);
@@ -34,8 +34,23 @@ public class RoomVisibility : MonoBehaviour
             }
         }
 
-        transform.GetChild(currentRoom).gameObject.SetActive(true);
-        mainCamera.transform.position = new Vector3(transform.GetChild(currentRoom).position.x, transform.GetChild(currentRoom).position.y, mainCamera.transform.position.z);
+        if(currentRoom != previousRoom) {
+            UpdateRooms(currentRoom);
+        }
+    }
+
+    void UpdateRooms(int activeRoomIndex) {
+        foreach(Transform room in transform) {
+            room.gameObject.SetActive(false);
+        }
+
+        GameObject activeRoom = transform.GetChild(activeRoomIndex).gameObject;
+        activeRoom.SetActive(true);
+        mainCamera.transform.position = new Vector3(transform.GetChild(activeRoomIndex).position.x, transform.GetChild(activeRoomIndex).position.y, mainCamera.transform.position.z);
+        Debug.Log("updated room");
+
+        audioManager.Play("Door");
+        activeRoom.GetComponent<RoomBehaviour>().SpawnEnemies();
     }
 
     public void GetRooms() {

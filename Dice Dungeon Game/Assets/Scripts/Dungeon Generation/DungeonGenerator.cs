@@ -38,7 +38,7 @@ public class DungeonGenerator : MonoBehaviour
                 }
             }
         }
-        GetComponent<RoomVisibility>().GetRooms();
+        GetComponent<GameController>().GetRooms();
     }
 
     void MazeGenerator() {

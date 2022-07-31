@@ -6,6 +6,7 @@ public class RoomBehaviour : MonoBehaviour
 {
     public GameObject[] walls; //0 - Top 1 - Right 2 - Bottom 3 - Left
     public GameObject[] doors;
+    public bool loaded;
 
     [SerializeField] private GameObject enemy;
 
@@ -15,6 +16,11 @@ public class RoomBehaviour : MonoBehaviour
             doors[i].SetActive(status[i]);
             walls[i].SetActive(!status[i]);
         }
+    }
+
+    public void LoadRoom() {
+        loaded = true;
+        SpawnEnemies();
     }
 
     public void SpawnEnemies() {
